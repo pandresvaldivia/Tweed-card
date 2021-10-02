@@ -1,0 +1,54 @@
+.openGraph {
+	border: 1px solid var(--grey);
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	overflow: hidden;
+}
+
+.openGraph a {
+	display: flex;
+	text-decoration: none;
+	color: var(--grey);
+}
+
+.openGraph-image {
+	inline-size: 92px;
+	block-size: 82.8px;
+	background: url('../assets/images/thumbnail.png') no-repeat center center;
+	background-size: cover;
+	flex-shrink: 0;
+}
+
+.openGraph .openGraph-title {
+	color: var(--white);
+	display: block;
+}
+
+.openGraph-content {
+	padding-inline-end: 16px;
+	padding-inline-start: 16px;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.openGraph-content p {
+	margin: 0;
+}
+
+.openGraph-description {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.openGraph-link {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

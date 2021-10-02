@@ -1,0 +1,48 @@
+.tweed {
+	padding: 16px;
+	display: flex;
+	gap: 16px;
+	border-bottom: 1px solid var(--grey);
+	position: relative;
+}
+
+.tweed-avatar {
+	margin: 0;
+	inline-size: 48px;
+	block-size: 48px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	overflow: hidden;
+	padding: 0;
+	flex-shrink: 0;
+}
+
+.tweed-container {
+	min-width: 0;
+}
+
+.tweed-avatar img {
+	vertical-align: middle;
+}
+
+.tweed a {
+	color: var(--blue);
+	text-decoration: none;
+}
+
+.tweed a:hover {
+	text-decoration: underline;
+}
+
+.tweed .icon-menu {
+	position: absolute;
+	right: 16px;
+	color: var(--grey);
+}
+
+.tweed .icon-menu:hover {
+	color: var(--white);
+}

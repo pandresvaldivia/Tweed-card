@@ -1,0 +1,19 @@
+:root {
+	--white: #ffffff;
+	--bg: #000000;
+	--blue: #2797dd;
+	--grey: #6e767d;
+	--pink: #f72381;
+	--fontBase: 'Poppins', sans-serif;
+	--body1-regular: 400 1rem/1.75rem Poppins;
+	--body1-bold: 700 1rem/1.75rem Poppins;
+	--body2-bold: 700 0.75rem/1.5rem Poppins;
+	--body2-regular: 400 0.75rem/1.375rem Poppins;
+}
+
+.body {
+	background: var(--bg);
+	color: var(--white);
+	margin: 0;
+	font: var(--body2-regular);
+}

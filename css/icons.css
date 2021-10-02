@@ -1,0 +1,62 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?1i1xeo');
+	src: url('../fonts/icomoon.eot?1i1xeo#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?1i1xeo') format('truetype'),
+		url('../fonts/icomoon.woff?1i1xeo') format('woff'),
+		url('../fonts/icomoon.svg?1i1xeo#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-comment:before {
+	content: '\e900';
+}
+/* .icon-heart-clicked:before {
+	content: '\e902';
+} */
+.icon-link:before {
+	content: '\e903';
+}
+.icon-menu:before {
+	content: '\e904';
+}
+.icon-retweet:before {
+	content: '\e905';
+}
+.icon-share:before {
+	content: '\e906';
+}
+.icon-heart:before {
+	content: '\e908';
+	position: absolute;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	transition: 0.5s background;
+	-webkit-transition: 0.5s background;
+	-moz-transition: 0.5s background;
+	-ms-transition: 0.5s background;
+	-o-transition: 0.5s background;
+}
