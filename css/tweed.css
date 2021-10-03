@@ -1,23 +1,24 @@
 .tweed {
-	padding: 16px;
+	border-bottom: 1px solid var(--grey);
 	display: flex;
 	gap: 16px;
-	border-bottom: 1px solid var(--grey);
+	max-inline-size: 598px;
+	padding: 16px;
 	position: relative;
 }
 
 .tweed-avatar {
-	margin: 0;
-	inline-size: 48px;
 	block-size: 48px;
 	border-radius: 50%;
-	-webkit-border-radius: 50%;
+	flex-shrink: 0;
+	inline-size: 48px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
-	overflow: hidden;
-	padding: 0;
-	flex-shrink: 0;
+	-webkit-border-radius: 50%;
 }
 
 .tweed-container {
@@ -38,11 +39,19 @@
 }
 
 .tweed .icon-menu {
+	color: var(--grey);
 	position: absolute;
 	right: 16px;
-	color: var(--grey);
 }
 
 .tweed .icon-menu:hover {
 	color: var(--white);
+}
+
+@media screen and (min-width: 598px) {
+	.tweed {
+		border: 1px solid var(--grey);
+		margin: 0 auto;
+		padding: 16px;
+	}
 }

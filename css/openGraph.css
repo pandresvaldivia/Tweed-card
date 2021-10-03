@@ -1,25 +1,29 @@
 .openGraph {
-	border: 1px solid var(--grey);
 	border-radius: 24px;
-	-webkit-border-radius: 24px;
+	border: 1px solid var(--grey);
+	overflow: hidden;
 	-moz-border-radius: 24px;
 	-ms-border-radius: 24px;
 	-o-border-radius: 24px;
-	overflow: hidden;
+	-webkit-border-radius: 24px;
 }
 
 .openGraph a {
+	color: var(--grey);
 	display: flex;
 	text-decoration: none;
-	color: var(--grey);
+}
+
+.openGraph a:hover {
+	text-decoration: none;
 }
 
 .openGraph-image {
-	inline-size: 92px;
-	block-size: 82.8px;
-	background: url('../assets/images/thumbnail.png') no-repeat center center;
+	background: url('../assets/images/link-thumbnail.png') no-repeat center center;
 	background-size: cover;
+	block-size: 82.8px;
 	flex-shrink: 0;
+	inline-size: 92px;
 }
 
 .openGraph .openGraph-title {
@@ -28,12 +32,12 @@
 }
 
 .openGraph-content {
-	padding-inline-end: 16px;
-	padding-inline-start: 16px;
-	min-width: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	min-width: 0;
+	padding-inline-end: 16px;
+	padding-inline-start: 16px;
 }
 
 .openGraph-content p {
@@ -42,13 +46,33 @@
 
 .openGraph-description {
 	display: -webkit-box;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
 	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
 }
 
 .openGraph-link {
+	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	overflow: hidden;
+}
+
+@media screen and (min-width: 598px) {
+	.openGraph a {
+		flex-direction: column;
+	}
+
+	.openGraph-image {
+		aspect-ratio: 16/9;
+		block-size: auto;
+		inline-size: 100%;
+	}
+
+	.openGraph-content {
+		padding: 16px;
+	}
+
+	.openGraph-description {
+		-webkit-line-clamp: 2;
+	}
 }

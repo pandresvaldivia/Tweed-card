@@ -1,41 +1,43 @@
 .actions {
-	display: flex;
-	justify-content: space-between;
-	font-size: 14px;
 	color: var(--grey);
+	display: flex;
+	font-size: 14px;
+	justify-content: space-between;
 	margin-block-start: 16px;
 }
 
 .action-button {
-	block-size: 35px;
-	inline-size: 35px;
 	background: transparent;
-	border: none;
+	block-size: 35px;
 	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
+	border: none;
+	inline-size: 35px;
 	transition: 0.5s background;
-	-webkit-transition: 0.5s background;
+	-moz-border-radius: 50%;
 	-moz-transition: 0.5s background;
+	-ms-border-radius: 50%;
 	-ms-transition: 0.5s background;
+	-o-border-radius: 50%;
 	-o-transition: 0.5s background;
+	-webkit-border-radius: 50%;
+	-webkit-transition: 0.5s background;
 }
 
 .actions i {
-	display: inline-block;
 	color: var(--grey);
+	display: inline-block;
 	transition: 0.5s color;
-	-webkit-transition: 0.5s color;
 	-moz-transition: 0.5s color;
 	-ms-transition: 0.5s color;
 	-o-transition: 0.5s color;
+	-webkit-transition: 0.5s color;
 }
 
-/* 29,
-155,
-240  */
+.actions > div,
+.action-button {
+	cursor: pointer;
+}
+
 .blue-container:hover .action-button {
 	background: rgba(29, 155, 240, 0.5);
 }
@@ -51,7 +53,9 @@
 }
 
 .green-container:hover .icon-retweet::before,
-.green-container:hover span {
+.green-container:hover span,
+.green-container .is-liked .icon-retweet::before,
+.green-container .is-liked + span {
 	color: rgb(0, 186, 124);
 }
 
@@ -81,16 +85,16 @@
 }
 
 .red-container.is-liked .icon-heart {
+	animation: like 1s steps(14, end) forwards;
 	background: url('../assets/icons/heart.png') -07px center;
 	background-size: 1450px 48px;
-	animation: like 1s steps(14, end) forwards;
-	-webkit-animation: like 1s steps(14, end) forwards;
+	border-radius: 50px;
 	transition: 0.5s background-color;
+	-webkit-animation: like 1s steps(14, end) forwards;
 	-webkit-transition: 0.5s background-color;
 	-moz-transition: 0.5s background-color;
 	-ms-transition: 0.5s background-color;
 	-o-transition: 0.5s background-color;
-	border-radius: 50px;
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	-ms-border-radius: 50px;

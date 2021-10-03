@@ -1,16 +1,16 @@
 .tweed-header a {
+	color: var(--grey);
 	display: flex;
 	flex-direction: column;
 	font: var(--body2-regular);
 	text-decoration: none;
-	color: var(--grey);
 }
 
-.tweed-header a .tweed-username {
-	font: var(--body2-bold);
+.tweed-header a .tweed-name {
 	color: var(--white);
+	font: var(--body2-bold);
 }
 
-.tweed-header a .tweed-username:hover {
+.tweed-name:hover {
 	text-decoration: underline;
 }
