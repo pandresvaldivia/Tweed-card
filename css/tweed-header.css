@@ -14,3 +14,10 @@
 .tweed-name:hover {
 	text-decoration: underline;
 }
+
+@media screen and (min-width: 598px) {
+	.tweed-header a {
+		flex-direction: row;
+		gap: 16px;
+	}
+}
