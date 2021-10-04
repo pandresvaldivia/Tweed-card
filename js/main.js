@@ -1,20 +1,12 @@
 const $likeBtn = document.querySelector('.icon-heart');
 const $retweetBtn = document.querySelector('.icon-retweet');
 
-$likeBtn.addEventListener('click', (e) => {
-	tweetEvent(e);
-});
+$likeBtn.addEventListener('click', tweetEvent);
+$retweetBtn.addEventListener('click', tweetEvent);
 
-$retweetBtn.addEventListener('click', (e) => {
-	tweetEvent(e, false);
-});
-
-function tweetEvent(e, isChild = true) {
+function tweetEvent(e) {
 	const isLiked = e.target.parentElement.classList.toggle('is-liked');
-
-	const counter = isChild
-		? e.target.nextElementSibling
-		: e.target.parentElement.nextElementSibling;
+	const counter = e.target.nextElementSibling;
 
 	counter.textContent = isLiked
 		? parseInt(counter.textContent) + 1

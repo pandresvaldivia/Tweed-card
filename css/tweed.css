@@ -27,6 +27,8 @@
 
 .tweed-avatar img {
 	vertical-align: middle;
+	inline-size: 100%;
+	block-size: 100%;
 }
 
 .tweed a {

@@ -29,9 +29,6 @@
 .icon-comment:before {
 	content: '\e900';
 }
-/* .icon-heart-clicked:before {
-	content: '\e902';
-} */
 .icon-link:before {
 	content: '\e903';
 }
@@ -45,18 +42,5 @@
 	content: '\e906';
 }
 .icon-heart:before {
-	border-radius: 50%;
 	content: '\e908';
-	font-size: 15px;
-	padding: 10px;
-	position: absolute;
-	transition: 0.5s background;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	-webkit-transition: 0.5s background;
-	-moz-transition: 0.5s background;
-	-ms-transition: 0.5s background;
-	-o-transition: 0.5s background;
 }
